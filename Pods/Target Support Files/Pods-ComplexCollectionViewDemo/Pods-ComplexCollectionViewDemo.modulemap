@@ -1,0 +1,6 @@
+framework module Pods_ComplexCollectionViewDemo {
+  umbrella header "Pods-ComplexCollectionViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

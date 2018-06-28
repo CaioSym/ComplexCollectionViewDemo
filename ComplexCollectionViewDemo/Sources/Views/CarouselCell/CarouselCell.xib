@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarouselCell" customModule="ComplexCollectionViewDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="BD5-MB-Dhq" id="vY7-Pa-2bX"/>
+                <outlet property="titleLabel" destination="3y2-5L-sFh" id="FMO-Ic-1lO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aMH-ld-fFW">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BD5-MB-Dhq">
+                    <rect key="frame" x="0.0" y="29" width="417" height="98"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6lx-OU-MBe">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y2-5L-sFh">
+                    <rect key="frame" x="0.0" y="8" width="397" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="czz-1h-0wx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3y2-5L-sFh" firstAttribute="top" secondItem="1Yj-ZP-ZCe" secondAttribute="top" constant="8" id="JAS-90-prM"/>
+                <constraint firstItem="3y2-5L-sFh" firstAttribute="leading" secondItem="1Yj-ZP-ZCe" secondAttribute="leading" id="NVP-uV-jk6"/>
+                <constraint firstItem="BD5-MB-Dhq" firstAttribute="trailing" secondItem="1Yj-ZP-ZCe" secondAttribute="trailing" id="OMV-TR-LM8"/>
+                <constraint firstItem="BD5-MB-Dhq" firstAttribute="top" secondItem="3y2-5L-sFh" secondAttribute="bottom" id="Wtv-BQ-0JV"/>
+                <constraint firstItem="BD5-MB-Dhq" firstAttribute="bottom" secondItem="1Yj-ZP-ZCe" secondAttribute="bottom" id="ZkB-eT-mON"/>
+                <constraint firstItem="BD5-MB-Dhq" firstAttribute="leading" secondItem="1Yj-ZP-ZCe" secondAttribute="leading" id="bgf-vp-x1Q"/>
+                <constraint firstItem="1Yj-ZP-ZCe" firstAttribute="trailing" secondItem="3y2-5L-sFh" secondAttribute="trailing" constant="20" id="eHj-mb-erF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1Yj-ZP-ZCe"/>
+            <point key="canvasLocation" x="90.5" y="335.5"/>
+        </view>
+    </objects>
+</document>

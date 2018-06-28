@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicAlbumCell" customModule="ComplexCollectionViewDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="coverImageView" destination="rbq-r3-gbp" id="nHE-g0-uwp"/>
+                <outlet property="titleLabel" destination="xwR-jB-gcZ" id="K5A-YE-Ahx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="K1S-YA-GU0">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rbq-r3-gbp">
+                    <rect key="frame" x="0.0" y="0.0" width="190" height="140"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwR-jB-gcZ">
+                    <rect key="frame" x="0.0" y="140" width="181" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="v1k-MN-YIn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xwR-jB-gcZ" firstAttribute="leading" secondItem="dAD-q3-DAF" secondAttribute="leading" id="1a7-m8-BIa"/>
+                <constraint firstAttribute="trailing" secondItem="xwR-jB-gcZ" secondAttribute="trailing" constant="9" id="832-Ah-uNR"/>
+                <constraint firstItem="rbq-r3-gbp" firstAttribute="trailing" secondItem="dAD-q3-DAF" secondAttribute="trailing" id="Dsg-MQ-K8a"/>
+                <constraint firstItem="rbq-r3-gbp" firstAttribute="top" secondItem="dAD-q3-DAF" secondAttribute="top" id="UpH-6l-Q7w"/>
+                <constraint firstItem="xwR-jB-gcZ" firstAttribute="bottom" secondItem="dAD-q3-DAF" secondAttribute="bottom" id="cdA-Cm-ipL"/>
+                <constraint firstItem="xwR-jB-gcZ" firstAttribute="top" secondItem="rbq-r3-gbp" secondAttribute="bottom" id="p3u-Ip-B5i"/>
+                <constraint firstItem="rbq-r3-gbp" firstAttribute="leading" secondItem="dAD-q3-DAF" secondAttribute="leading" id="qFP-wr-dai"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="dAD-q3-DAF"/>
+            <point key="canvasLocation" x="-75" y="284.5"/>
+        </view>
+    </objects>
+</document>
